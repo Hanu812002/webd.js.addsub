@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+    .button {
+      background-color: turquoise;
+      color:black;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px ;
+       font-size: large;
+    }
+    </style>
+    <script>
+        function myfun(a,b){
+            
+            var x=parseInt(document.getElementById("1").value);
+            var y=parseInt(document.getElementById("2").value);
+            var sum=x+y;
+            document.getElementById("demo").innerHTML=sum;
+            document.getElementById("dem").value=sum;
+        }
+        function myfun1(a,b){
+            var x=parseInt(document.getElementById("1").value);
+            var y=parseInt(document.getElementById("2").value);
+            var sum=x-y;
+            document.getElementById("dem").innerHTML=sum;
+            // document.getElementById("dem").value=sum;
+        }
+        function myfun2(a,b){
+            var x=parseInt(document.getElementById("1").value);
+            var y=parseInt(document.getElementById("2").value);
+            var sum=x*y;
+            document.getElementById("mul").innerHTML=sum;
+        
+        }
+        function myfun3(a,b){
+            var x=parseInt(document.getElementById("1").value);
+            var y=parseInt(document.getElementById("2").value);
+            var sum=x/y;
+            document.getElementById("divi").innerHTML=sum;
+        
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>First Number</h1>
+    <input type="text" style="height: 30px; font-size: large;" id="1"  >
+    <h1>Second Number</h1>
+    <input type="text" style="height: 30px; font-size: large;" id="2">
+   <br><br>
+
+   <button  type="button" class="button" onclick="myfun(0,0)">+</button>
+    <h1 id="demo"> </h1>
+
+    
+    <button   type="button" class="button" onclick="myfun1(0,0)">-</button>
+    <h1 id="dem">  </h1>
+    
+    <button   type="button"  class="button" onclick="myfun2(0,0)">*</button>
+    <h1 id="mul">  </h1>
+    
+    <button   type="button"  class="button" onclick="myfun3(0,0)">/</button>  
+    <h1 id="divi">  </h1>
+
+
+</body>
+</html>
